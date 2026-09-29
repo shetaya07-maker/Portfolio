@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Shetaya - Front End Developer Portfolio">
+    <title>Ahmed Shetaya | Front End Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Mobile Menu -->
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Color Settings -->
+    <button class="settings-btn" id="settingsBtn" title="Color settings">
+        <i class="fa-solid fa-gear"></i>
+    </button>
+
+    <div class="settings-panel" id="settingsPanel">
+        <h4>Accent Color</h4>
+        <div class="swatches">
+            <span class="swatch active" data-color="#20c997" style="background:#20c997"></span>
+            <span class="swatch" data-color="#0d6efd" style="background:#0d6efd"></span>
+            <span class="swatch" data-color="#e83e8c" style="background:#e83e8c"></span>
+            <span class="swatch" data-color="#fd7e14" style="background:#fd7e14"></span>
+            <span class="swatch" data-color="#6f42c1" style="background:#6f42c1"></span>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="aside">
+        <div class="profile">
+            <img src="./images/صوره 2.png"
+                 title="I'm Ahmed"
+                 alt="Ahmed Shetaya">
+            <h1>Ahmed Shetaya</h1>
+            <p>Front End Developer</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#whatido">What I Do</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://dribbble.com/" target="_blank" aria-label="Dribbble">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home-overlay"></div>
+
+            <div class="home-content">
+                <p class="eyebrow">WELCOME</p>
+
+                <h2>I'm <span id="typing"></span></h2>
+
+                <p class="home-description">
+                    I build clean, modern and responsive websites with HTML, CSS and JavaScript.
+                </p>
+
+                <div class="home-buttons">
+                    <a href="#aboutme" class="btn btn-primary">About Me</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
+            </div>
+
+            <a href="#aboutme" class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="aboutme" class="aboutme section">
+            <div class="section-title">
+                <span>ABOUT ME</span>
+                <h2>Know Me More</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>I'm <strong>Ahmed Shetaya</strong>, a Front End Developer</h3>
+
+                    <p>
+                        I am a Computer and Artificial Intelligence student and a Front End
+                        Developer interested in creating modern, responsive and user-friendly
+                        websites.
+                    </p>
+
+                    <p>
+                        I enjoy turning ideas into clean interfaces and continuously improving
+                        my skills in HTML, CSS, JavaScript and modern web technologies.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+
+                <div class="about-info">
+                    <div class="info-line">
+                        <span>Name:</span>
+                        <strong>Ahmed Shetaya</strong>
+                    </div>
+                    <div class="info-line">
+                        <span>Email:</span>
+                        <strong>ahmed.shetaya@example.com</strong>
+                    </div>
+                    <div class="info-line">
+                        <span>Education:</span>
+                        <strong>Damietta University</strong>
+                    </div>
+                    <div class="info-line">
+                        <span>Freelance:</span>
+                        <strong class="available">Available</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="whatido" class="whatido section soft-section">
+            <div class="section-title">
+                <span>WHAT I DO</span>
+                <h2>How I can help your project</h2>
+            </div>
+
+            <div class="services">
+                <article class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div>
+                        <h3>Web Design</h3>
+                        <p>Clean, modern and responsive interfaces designed around your brand.</p>
+                    </div>
+                </article>
+
+                <article class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                        <h3>Web Development</h3>
+                        <p>Fast and reliable websites built with clean HTML, CSS and JavaScript.</p>
+                    </div>
+                </article>
+
+                <article class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div>
+                        <h3>Responsive Design</h3>
+                        <p>Interfaces that work smoothly across phones, tablets and desktops.</p>
+                    </div>
+                </article>
+
+                <article class="service-box">
+                    <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <div>
+                        <h3>UI / UX</h3>
+                        <p>Simple user-first layouts that are easy to navigate and understand.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills section">
+            <div class="section-title">
+                <span>MY SKILLS</span>
+                <h2>My Technical Level</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-label"><span>HTML</span><span>95%</span></div>
+                    <div class="skill-bar"><span style="--pct:95%"></span></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-label"><span>CSS</span><span>90%</span></div>
+                    <div class="skill-bar"><span style="--pct:90%"></span></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-label"><span>JavaScript</span><span>80%</span></div>
+                    <div class="skill-bar"><span style="--pct:80%"></span></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-label"><span>React JS</span><span>70%</span></div>
+                    <div class="skill-bar"><span style="--pct:70%"></span></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-label"><span>Python</span><span>70%</span></div>
+                    <div class="skill-bar"><span style="--pct:70%"></span></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-label"><span>Bootstrap</span><span>85%</span></div>
+                    <div class="skill-bar"><span style="--pct:85%"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume" class="resume section soft-section">
+            <div class="section-title">
+                <span>RESUME</span>
+                <h2>A summary of my experience</h2>
+            </div>
+
+            <div class="resume-content">
+                <div class="resume-column">
+                    <h3>Education</h3>
+
+                    <div class="timeline-item">
+                        <span class="date">2025 - 2029</span>
+                        <h4>Computer and Artificial Intelligence</h4>
+                        <p class="place">Damietta University</p>
+                        <p>Studying computer science, programming and artificial intelligence.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date">Current</span>
+                        <h4>Front End Web Development</h4>
+                        <p class="place">Digital Egypt Pioneers Initiative</p>
+                        <p>Training focused on modern front-end web development.</p>
+                    </div>
+                </div>
+
+                <div class="resume-column">
+                    <h3>Experience</h3>
+
+                    <div class="timeline-item">
+                        <span class="date">2026 - Present</span>
+                        <h4>Front End Developer</h4>
+                        <p class="place">Freelance / Personal Projects</p>
+                        <p>Building responsive portfolio, landing page and web projects.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date">2025 - Present</span>
+                        <h4>Web Development Projects</h4>
+                        <p class="place">Personal Projects</p>
+                        <p>Developing projects using HTML, CSS, JavaScript and modern tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="portfolio section">
+            <div class="section-title">
+                <span>PORTFOLIO</span>
+                <h2>Some of my recent work</h2>
+            </div>
+
+            <div class="portfolio-grid">
+                <a href="#" class="portfolio-item">
+                    <img src="./images/كوفي.png" alt="E-commerce Store">
+                    <div class="portfolio-info">
+                        <h3>Caffeine-Cove</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="portfolio-item">
+                    <img src="./images/مطعم.png" alt="Fitness App">
+                    <div class="portfolio-info">
+                        <h3>Royle furniture</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="portfolio-item">
+                    <img src="./images/معرض.png" alt="Personal Blog">
+                    <div class="portfolio-info">
+                        <h3>Royal Taste</h3>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+        <section id="testimonial" class="testimonial section soft-section">
+            <div class="section-title">
+                <span>TESTIMONIAL</span>
+                <h2>What people say</h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <article class="testimonial-box">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Professional, responsive and very easy to communicate with.</p>
+                    <h4>James Carter</h4>
+                    <span>Founder, Carter Studio</span>
+                </article>
+
+                <article class="testimonial-box">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>The website looks clean, modern and works perfectly on mobile.</p>
+                    <h4>Aisha Rahman</h4>
+                    <span>Marketing Lead</span>
+                </article>
+
+                <article class="testimonial-box">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Delivered the project with attention to detail and a clean interface.</p>
+                    <h4>Daniel Lee</h4>
+                    <span>CEO, Lee & Partners</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact section">
+            <div class="section-title">
+                <span>CONTACT</span>
+                <h2>Get in Touch</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's talk about your project</h3>
+                    <p>
+                        Have a project or idea? Send me a message and I'll get back to you.
+                    </p>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>ahmed.shetaya@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span>Location</span>
+                            <p>Egypt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <input type="text" name="subject" placeholder="Subject" required>
+
+                    <textarea name="message"
+                              rows="6"
+                              placeholder="Tell me about your project..."
+                              required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Ahmed Shetaya. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
